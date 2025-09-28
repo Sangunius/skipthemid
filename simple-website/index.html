@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkipTheMid - Hide Junk on Netflix</title>
+    <meta name="description" content="Automatically hide low-rated movies and shows on Netflix. Only see content with IMDb ratings above your threshold. Free Chrome extension.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom Styles -->
+    <style>
+        .gradient-text {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3);
+        }
+        
+        .animate-fade-in {
+            animation: fadeIn 0.6s ease-in-out;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .animate-slide-up {
+            animation: slideUp 0.6s ease-out;
+        }
+        
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-blue-50 via-white to-purple-50 min-h-screen">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white/80 backdrop-blur-md z-50 border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center space-x-2">
+                    <div class="w-8 h-8 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg flex items-center justify-center">
+                        <span class="text-white font-bold text-sm">🎬</span>
+                    </div>
+                    <span class="text-xl font-bold gradient-text">SkipTheMid</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#features" class="text-gray-600 hover:text-blue-600 transition-colors">Features</a>
+                    <a href="#pricing" class="text-gray-600 hover:text-blue-600 transition-colors">Pricing</a>
+                    <a href="#download" class="btn-primary text-white font-semibold py-2 px-6 rounded-lg">Download Free</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center animate-fade-in">
+                <h1 class="text-5xl md:text-7xl font-bold mb-6">
+                    <span class="gradient-text">Hide Junk</span>
+                    <br>
+                    <span class="text-gray-900">on Netflix</span>
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto">
+                    Automatically filter out low-rated movies and shows. Only see content with IMDb ratings above your threshold.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
+                    <a href="#download" class="btn-primary text-white font-semibold py-4 px-8 rounded-lg text-lg">
+                        🚀 Download Free
+                    </a>
+                    <a href="https://github.com/adityash8/skipthemid" class="bg-white text-blue-600 font-semibold py-4 px-8 rounded-lg border-2 border-blue-200 hover:border-blue-300 hover:bg-blue-50 transition-all duration-200 text-lg">
+                        📖 View on GitHub
+                    </a>
+                </div>
+                <div class="flex justify-center items-center space-x-8 text-sm text-gray-500">
+                    <div class="flex items-center">
+                        <span class="text-green-500 mr-2">✅</span>
+                        Free to use
+                    </div>
+                    <div class="flex items-center">
+                        <span class="text-green-500 mr-2">✅</span>
+                        No registration
+                    </div>
+                    <div class="flex items-center">
+                        <span class="text-green-500 mr-2">✅</span>
+                        Works instantly
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-16 bg-white/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="text-center animate-slide-up">
+                    <div class="text-3xl md:text-4xl font-bold gradient-text mb-2">10K+</div>
+                    <div class="text-gray-600">Downloads</div>
+                </div>
+                <div class="text-center animate-slide-up" style="animation-delay: 0.1s;">
+                    <div class="text-3xl md:text-4xl font-bold gradient-text mb-2">4.8★</div>
+                    <div class="text-gray-600">Rating</div>
+                </div>
+                <div class="text-center animate-slide-up" style="animation-delay: 0.2s;">
+                    <div class="text-3xl md:text-4xl font-bold gradient-text mb-2">95%</div>
+                    <div class="text-gray-600">Satisfaction</div>
+                </div>
+                <div class="text-center animate-slide-up" style="animation-delay: 0.3s;">
+                    <div class="text-3xl md:text-4xl font-bold gradient-text mb-2">24/7</div>
+                    <div class="text-gray-600">Support</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16 animate-fade-in">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">
+                    Why <span class="gradient-text">SkipTheMid</span>?
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Stop wasting time scrolling through mediocre content. SkipTheMid automatically filters Netflix to show only the good stuff.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 p-6 text-center animate-slide-up">
+                    <div class="w-16 h-16 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full flex items-center justify-center text-white mx-auto mb-4">
+                        <span class="text-2xl">🎯</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Smart Filtering</h3>
+                    <p class="text-gray-600">Automatically hide shows with IMDb ratings below your threshold</p>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 p-6 text-center animate-slide-up" style="animation-delay: 0.1s;">
+                    <div class="w-16 h-16 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full flex items-center justify-center text-white mx-auto mb-4">
+                        <span class="text-2xl">⭐</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Hover Ratings</h3>
+                    <p class="text-gray-600">See IMDb scores instantly when you hover over any title</p>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 p-6 text-center animate-slide-up" style="animation-delay: 0.2s;">
+                    <div class="w-16 h-16 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full flex items-center justify-center text-white mx-auto mb-4">
+                        <span class="text-2xl">⚡</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Real-time Updates</h3>
+                    <p class="text-gray-600">Filters apply instantly as you scroll through Netflix</p>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 p-6 text-center animate-slide-up" style="animation-delay: 0.3s;">
+                    <div class="w-16 h-16 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full flex items-center justify-center text-white mx-auto mb-4">
+                        <span class="text-2xl">🛡️</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Privacy First</h3>
+                    <p class="text-gray-600">No personal data collected. All ratings cached locally</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="py-16 bg-white/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 animate-fade-in">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">
+                    How It <span class="gradient-text">Works</span>
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Get started in under 2 minutes. No complex setup required.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center animate-slide-up">
+                    <div class="w-16 h-16 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-6">1</div>
+                    <h3 class="text-2xl font-semibold mb-4">Install Extension</h3>
+                    <p class="text-gray-600">Download SkipTheMid from the Chrome Web Store. One-click install, no registration required.</p>
+                </div>
+                
+                <div class="text-center animate-slide-up" style="animation-delay: 0.2s;">
+                    <div class="w-16 h-16 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-6">2</div>
+                    <h3 class="text-2xl font-semibold mb-4">Set Your Threshold</h3>
+                    <p class="text-gray-600">Choose your minimum IMDb rating (default 8.0). Free users get 6.0, Pro users get full control.</p>
+                </div>
+                
+                <div class="text-center animate-slide-up" style="animation-delay: 0.4s;">
+                    <div class="w-16 h-16 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-6">3</div>
+                    <h3 class="text-2xl font-semibold mb-4">Enjoy Filtered Netflix</h3>
+                    <p class="text-gray-600">Visit Netflix and watch as low-rated content disappears. Hover to see ratings instantly.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16 animate-fade-in">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">
+                    Simple <span class="gradient-text">Pricing</span>
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Start free, upgrade when you need more power.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <!-- Free Plan -->
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 p-8 animate-slide-up">
+                    <div class="text-center mb-6">
+                        <h3 class="text-2xl font-bold mb-2">Free</h3>
+                        <div class="text-4xl font-bold gradient-text mb-2">$0</div>
+                        <p class="text-gray-600">Perfect for getting started</p>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center">
+                            <span class="text-green-500 mr-3">✅</span>
+                            IMDb rating threshold (6.0)
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-green-500 mr-3">✅</span>
+                            Hover rating display
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-green-500 mr-3">✅</span>
+                            Basic filtering
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-green-500 mr-3">✅</span>
+                            Community support
+                        </li>
+                    </ul>
+                    <a href="#download" class="bg-white text-blue-600 font-semibold py-3 px-6 rounded-lg border-2 border-blue-200 hover:border-blue-300 hover:bg-blue-50 transition-all duration-200 w-full text-center block">
+                        Get Started Free
+                    </a>
+                </div>
+
+                <!-- Pro Plan -->
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 p-8 relative border-2 border-blue-200 animate-slide-up" style="animation-delay: 0.2s;">
+                    <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                        <span class="bg-gradient-to-r from-blue-500 to-purple-500 text-white px-4 py-1 rounded-full text-sm font-semibold">
+                            Most Popular
+                        </span>
+                    </div>
+                    <div class="text-center mb-6">
+                        <h3 class="text-2xl font-bold mb-2">Pro</h3>
+                        <div class="text-4xl font-bold gradient-text mb-2">$1<span class="text-lg text-gray-600">/month</span></div>
+                        <p class="text-gray-600">For power users</p>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center">
+                            <span class="text-green-500 mr-3">✅</span>
+                            Custom rating thresholds (5.0 - 10.0)
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-green-500 mr-3">✅</span>
+                            Genre-based filtering
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-green-500 mr-3">✅</span>
+                            Rotten Tomatoes & Metacritic support
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-green-500 mr-3">✅</span>
+                            AI-powered smart filtering
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-green-500 mr-3">✅</span>
+                            Shareable filtered lists
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-green-500 mr-3">✅</span>
+                            Priority support
+                        </li>
+                    </ul>
+                    <a href="https://gumroad.com/skipthemid" class="btn-primary text-white font-semibold py-3 px-6 rounded-lg w-full text-center block">
+                        Upgrade to Pro
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="download" class="py-16 bg-gradient-to-r from-blue-500 to-purple-500">
+        <div class="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+            <div class="animate-fade-in">
+                <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">
+                    Ready to Skip the Mid?
+                </h2>
+                <p class="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
+                    Join thousands of users who've transformed their Netflix experience. Download SkipTheMid today and never waste time on bad content again.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                    <a href="https://chrome.google.com/webstore/detail/skipthemid/your-extension-id" class="bg-white text-blue-600 font-semibold py-4 px-8 rounded-lg shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-200 text-lg">
+                        🚀 Download from Chrome Store
+                    </a>
+                    <a href="https://github.com/adityash8/skipthemid" class="bg-white/20 text-white font-semibold py-4 px-8 rounded-lg border-2 border-white/30 hover:bg-white/30 transition-all duration-200 text-lg">
+                        📖 View on GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-8 h-8 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg flex items-center justify-center">
+                            <span class="text-white font-bold text-sm">🎬</span>
+                        </div>
+                        <span class="text-xl font-bold">SkipTheMid</span>
+                    </div>
+                    <p class="text-gray-400">
+                        Hide junk on Netflix. Only see the good stuff.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Product</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#features" class="hover:text-white transition-colors">Features</a></li>
+                        <li><a href="#pricing" class="hover:text-white transition-colors">Pricing</a></li>
+                        <li><a href="#download" class="hover:text-white transition-colors">Download</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Support</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="https://github.com/adityash8/skipthemid/issues" class="hover:text-white transition-colors">Help Center</a></li>
+                        <li><a href="mailto:support@skipthemid.com" class="hover:text-white transition-colors">Contact</a></li>
+                        <li><a href="https://github.com/adityash8/skipthemid/blob/main/LICENSE" class="hover:text-white transition-colors">Privacy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Community</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="https://github.com/adityash8/skipthemid" class="hover:text-white transition-colors">GitHub</a></li>
+                        <li><a href="https://twitter.com/skipthemid" class="hover:text-white transition-colors">Twitter</a></li>
+                        <li><a href="https://reddit.com/r/skipthemid" class="hover:text-white transition-colors">Reddit</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 SkipTheMid. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Smooth scrolling script -->
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add animation classes on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-fade-in');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all sections
+        document.querySelectorAll('section').forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>
