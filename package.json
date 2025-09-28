@@ -1,0 +1,31 @@
+{
+  "name": "skipthemid",
+  "version": "1.0.0",
+  "description": "Hide junk on Netflix - Chrome extension that filters content by IMDb ratings",
+  "main": "content.js",
+  "scripts": {
+    "build": "echo 'Extension ready for Chrome Web Store'",
+    "test": "echo 'No tests specified'",
+    "lint": "echo 'Linting not configured'"
+  },
+  "keywords": [
+    "netflix",
+    "chrome-extension",
+    "imdb",
+    "filter",
+    "streaming",
+    "ratings"
+  ],
+  "author": "SkipTheMid Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/skipthemid/chrome-extension"
+  },
+  "bugs": {
+    "url": "https://github.com/skipthemid/chrome-extension/issues"
+  },
+  "homepage": "https://skipthemid.com",
+  "devDependencies": {},
+  "dependencies": {}
+}

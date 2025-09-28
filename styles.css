@@ -1,0 +1,147 @@
+/* SkipTheMid Styles for Netflix */
+
+/* Hidden content overlay */
+.skipthemid-hidden {
+    opacity: 0.1 !important;
+    filter: blur(2px) !important;
+    pointer-events: none !important;
+    transition: all 0.3s ease !important;
+}
+
+/* Rating display */
+.skipthemid-rating {
+    position: absolute !important;
+    top: 8px !important;
+    right: 8px !important;
+    background: rgba(0, 0, 0, 0.8) !important;
+    color: white !important;
+    padding: 4px 8px !important;
+    border-radius: 4px !important;
+    font-size: 12px !important;
+    font-weight: 600 !important;
+    z-index: 1000 !important;
+    pointer-events: none !important;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+}
+
+/* No rating indicator */
+.skipthemid-no-rating {
+    position: absolute !important;
+    top: 8px !important;
+    right: 8px !important;
+    background: rgba(128, 128, 128, 0.8) !important;
+    color: white !important;
+    padding: 4px 8px !important;
+    border-radius: 4px !important;
+    font-size: 12px !important;
+    font-weight: 600 !important;
+    z-index: 1000 !important;
+    pointer-events: none !important;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+}
+
+/* Hover effects for rating display */
+[data-uia*="title"]:hover .skipthemid-rating,
+[data-uia*="title"]:hover .skipthemid-no-rating {
+    opacity: 1 !important;
+    transform: scale(1.05) !important;
+    transition: all 0.2s ease !important;
+}
+
+/* Ensure rating displays are visible on hover */
+[data-uia*="title"]:hover .skipthemid-rating {
+    background: rgba(0, 0, 0, 0.9) !important;
+}
+
+[data-uia*="title"]:hover .skipthemid-no-rating {
+    background: rgba(128, 128, 128, 0.9) !important;
+}
+
+/* Smooth transitions for all SkipTheMid elements */
+[data-uia*="title"] {
+    transition: opacity 0.3s ease, filter 0.3s ease !important;
+}
+
+/* Pro feature indicators */
+.skipthemid-pro-feature {
+    position: relative !important;
+}
+
+.skipthemid-pro-feature::after {
+    content: "PRO" !important;
+    position: absolute !important;
+    top: -4px !important;
+    right: -4px !important;
+    background: #ff6b6b !important;
+    color: white !important;
+    font-size: 8px !important;
+    font-weight: 700 !important;
+    padding: 2px 4px !important;
+    border-radius: 2px !important;
+    text-transform: uppercase !important;
+    z-index: 1001 !important;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+}
+
+/* Loading state for rating fetch */
+.skipthemid-loading {
+    position: relative !important;
+}
+
+.skipthemid-loading::before {
+    content: "" !important;
+    position: absolute !important;
+    top: 8px !important;
+    right: 8px !important;
+    width: 16px !important;
+    height: 16px !important;
+    border: 2px solid rgba(255, 255, 255, 0.3) !important;
+    border-top: 2px solid white !important;
+    border-radius: 50% !important;
+    animation: skipthemid-spin 1s linear infinite !important;
+    z-index: 1000 !important;
+}
+
+@keyframes skipthemid-spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* High rating highlight */
+.skipthemid-high-rating {
+    position: relative !important;
+}
+
+.skipthemid-high-rating::before {
+    content: "⭐" !important;
+    position: absolute !important;
+    top: 4px !important;
+    left: 4px !important;
+    font-size: 16px !important;
+    z-index: 1000 !important;
+    pointer-events: none !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .skipthemid-rating,
+    .skipthemid-no-rating {
+        font-size: 10px !important;
+        padding: 2px 6px !important;
+        top: 4px !important;
+        right: 4px !important;
+    }
+}
+
+/* Dark mode compatibility */
+@media (prefers-color-scheme: dark) {
+    .skipthemid-rating {
+        background: rgba(255, 255, 255, 0.9) !important;
+        color: black !important;
+    }
+    
+    .skipthemid-no-rating {
+        background: rgba(200, 200, 200, 0.9) !important;
+        color: black !important;
+    }
+}

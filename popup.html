@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkipTheMid Settings</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎬 SkipTheMid</h1>
+            <p>Hide junk, see only the good stuff</p>
+        </div>
+        
+        <div class="settings">
+            <div class="setting-group">
+                <label for="threshold">IMDb Rating Threshold</label>
+                <div class="slider-container">
+                    <input type="range" id="threshold" min="5.0" max="9.5" step="0.1" value="8.0">
+                    <span id="threshold-value">8.0</span>
+                </div>
+                <small>Hide shows rated below this score</small>
+            </div>
+            
+            <div class="setting-group">
+                <label for="enabled">
+                    <input type="checkbox" id="enabled" checked>
+                    Enable SkipTheMid
+                </label>
+            </div>
+            
+            <div class="setting-group">
+                <label for="show-ratings">
+                    <input type="checkbox" id="show-ratings" checked>
+                    Show IMDb scores on hover
+                </label>
+            </div>
+            
+            <div class="setting-group pro-feature">
+                <label for="genre-filter">Genre Filter</label>
+                <select id="genre-filter" disabled>
+                    <option value="">All Genres</option>
+                    <option value="action">Action</option>
+                    <option value="comedy">Comedy</option>
+                    <option value="drama">Drama</option>
+                    <option value="horror">Horror</option>
+                    <option value="romance">Romance</option>
+                    <option value="sci-fi">Sci-Fi</option>
+                    <option value="thriller">Thriller</option>
+                </select>
+            </div>
+            
+            <div class="setting-group pro-feature">
+                <label for="rating-source">Rating Source</label>
+                <select id="rating-source" disabled>
+                    <option value="imdb">IMDb</option>
+                    <option value="rotten">Rotten Tomatoes</option>
+                    <option value="metacritic">Metacritic</option>
+                </select>
+            </div>
+        </div>
+        
+        <div class="stats">
+            <div class="stat">
+                <span class="stat-number" id="hidden-count">0</span>
+                <span class="stat-label">Hidden</span>
+            </div>
+            <div class="stat">
+                <span class="stat-number" id="visible-count">0</span>
+                <span class="stat-label">Visible</span>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <button id="refresh" class="btn-secondary">Refresh Page</button>
+            <a href="#" id="upgrade" class="btn-primary">Upgrade to Pro</a>
+        </div>
+    </div>
+    
+    <script src="popup.js"></script>
+</body>
+</html>
